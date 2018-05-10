@@ -6,13 +6,14 @@ __author__ = 'jslvtr'
 
 
 class Database(object):
-    URI = os.environ.get("MONGOLAB_URI")
+    URI = os.environ.get("MONGOLAB_URI", default="mongodb://127.0.0.1:27017")
     DATABASE = None
 
     @staticmethod
     def initialize():
         client = pymongo.MongoClient(Database.URI)
-        Database.DATABASE = client.get_default_database()
+        # Database.DATABASE = client.get_default_database()
+        Database.DATABASE = client['fullstack']
 
     @staticmethod
     def insert(collection, data):
