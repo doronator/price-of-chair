@@ -70,5 +70,7 @@ def get_alert_page(alert_id):
 
 @alert_blueprint.route('/check_price/<string:alert_id>')
 def check_alert_price(alert_id):
-    Alert.find_by_id(alert_id).load_item_price()
+    alert = Alert.find_by_id(alert_id)
+    alert.load_item_price()
+    alert.send()
     return redirect(url_for('.get_alert_page', alert_id=alert_id))

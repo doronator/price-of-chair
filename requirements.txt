@@ -4,3 +4,4 @@ beautifulsoup4==4.6.0
 requests==2.14.2
 passlib==1.7.1
 attrs==15.2.0
+uwsgi==2.0.17
