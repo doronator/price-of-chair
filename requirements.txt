@@ -1,6 +1,6 @@
-Flask==0.10.1
-pymongo==3.2.1
-beautifulsoup4==4.4.1
-requests==2.8.0
-passlib==1.6.5
-uwsgi
+Flask==0.12.2
+pymongo==3.4.0
+beautifulsoup4==4.6.0
+requests==2.14.2
+passlib==1.7.1
+attrs==15.2.0
