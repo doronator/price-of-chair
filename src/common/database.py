@@ -13,7 +13,8 @@ class Database(object):
     def initialize():
         client = pymongo.MongoClient(Database.URI)
         # Database.DATABASE = client.get_default_database()
-        Database.DATABASE = client['fullstack']
+        # Database.DATABASE = client['fullstack']
+        Database.DATABASE = client['heroku_qxq9zg18']
 
     @staticmethod
     def insert(collection, data):
