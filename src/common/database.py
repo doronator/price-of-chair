@@ -6,7 +6,7 @@ __author__ = 'jslvtr'
 
 
 class Database(object):
-    URI = os.environ.get("MONGOLAB_URI", default="mongodb://127.0.0.1:27017")
+    URI = os.environ.get("MONGODB_URI", default="mongodb://127.0.0.1:27017")
     DATABASE = None
 
     @staticmethod

@@ -1,7 +1,6 @@
 import os
 
-__author__ = 'jslvtr'
-
+__author__ = 'doronator'
 
 URL = os.environ.get('MAILGUN_URL')
 API_KEY = os.environ.get('MAILGUN_API_KEY')
